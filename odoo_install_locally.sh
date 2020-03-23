@@ -50,6 +50,7 @@ printf "longpolling_port = ${OE_LONGPOLLING_PORT}\n" >> ${OE_CONFIG_FILE}
 
 printf "addons_path = ${OE_HOME_EXT}/addons,${OE_HOME}/addons/addons," >> ${OE_CONFIG_FILE}
 printf "${OE_HOME}/addons/web," >> ${OE_CONFIG_FILE}
+printf "${OE_HOME}/addons/santelibre," >> ${OE_CONFIG_FILE}
 if [ $MINIMAL_ADDONS = "False" ]; then
     printf "${OE_HOME}/addons/account-analytic," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/account-budgeting," >> ${OE_CONFIG_FILE}
@@ -68,6 +69,7 @@ if [ $MINIMAL_ADDONS = "False" ]; then
     printf "${OE_HOME}/addons/brand," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/business-requirement," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/commission," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/community-data-files," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/connector-telephony," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/contract," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/credit-control," >> ${OE_CONFIG_FILE}
@@ -76,6 +78,7 @@ if [ $MINIMAL_ADDONS = "False" ]; then
     printf "${OE_HOME}/addons/development," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/donation," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/e-commerce," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/edi," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/event," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/helpdesk," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/hr," >> ${OE_CONFIG_FILE}
@@ -91,8 +94,19 @@ if [ $MINIMAL_ADDONS = "False" ]; then
     printf "${OE_HOME}/addons/muk_web," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/muk_website," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/multi-company," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-base-addons," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/odoo-business-spending-management-quebec-canada," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-entertainment-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-git-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-hr-addons," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/odoo-partner-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-product-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-project-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-purchase-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-stock-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-survey-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-timesheet-addons," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/odoo-web-addons," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/openeducat_erp," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/partner-contact," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/pos," >> ${OE_CONFIG_FILE}
@@ -114,6 +128,7 @@ if [ $MINIMAL_ADDONS = "False" ]; then
     printf "${OE_HOME}/addons/server-ux," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/smile_addons," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/social," >> ${OE_CONFIG_FILE}
+    printf "${OE_HOME}/addons/stock-logistics-warehouse," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/timesheet," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/website," >> ${OE_CONFIG_FILE}
     printf "${OE_HOME}/addons/wms," >> ${OE_CONFIG_FILE}
